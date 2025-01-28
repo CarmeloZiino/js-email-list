@@ -32,3 +32,14 @@ function generateEmails() {
     }};
 
     // !!! Creo una funzione per stampare le mail in pagina
+
+
+    function printEmails() {
+        emails.forEach(email => {
+            let li = document.createElement("li"); //creo un tag <li></li> 
+            mailList.appendChild(li); //dichiaro al programma che il tag <li></li> deve stare dentro la Mail List, ovvero il tag <ul></ul>
+            li.textContent = email; //Setto il contenuto testuale del tag <li></li> riempiendolo con una singola mail.
+        })}
+
+    // Faccio partire la funzione: Stampa Email.
+    generateEmails();
