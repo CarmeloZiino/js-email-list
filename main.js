@@ -4,3 +4,14 @@ Abbellire con CSS o Bootstrap
 Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre)
 Buon Lavoro*/
 
+
+// Selezione l'elemento HTML dove far compaire la lista
+
+const mailList = document.getElementById ("mail-List");
+
+// Creo un Array dove salvare le mail
+
+let emails = [];
+let totalEmails = 10; //Questa variabile mi setta il numero di chiamate che andrò a fare
+
+// Creo una funzione per generare le mail
